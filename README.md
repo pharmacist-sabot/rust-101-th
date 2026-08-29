@@ -1,4 +1,4 @@
-# Rust-101 (ฉบับภาษาไทย)
+# Rust-101 (Thai Edition)
 
 ```
 ██████╗ ██╗   ██╗ ██████╗████████╗██╗ ██████╗ ██╗
@@ -13,20 +13,22 @@
 
 ## ◆ PULSE
 
-ภาษา Rust มีตำราภาษาอังกฤษที่ดีอยู่แล้ว; สิ่งที่ขาดคือตำราที่อ่านได้ใน
-ภาษาที่เราเรียนมาทั้งชีวิต นี่คือการแปลและเรียบเรียง "Rust-101" ของ
-Ralf Jung เป็นภาษาไทย - จากแนวคิดพื้นฐานสู่การปฏิบัติจริง บน
-mdBook ที่อ่านเป็นเว็บได้เลย เปิดโดยไม่ต้องติดตั้งอะไรทั้งสิ้น ผู้เรียน
-ชาวไทยได้ตำราอ้างอิงที่เข้าใจตรงประเด็น โดยให้เครดิตแก่ต้นฉบับเสมอ
-ภายใต้ใบอนุญาตเดียวกัน
+Rust has good English textbooks; what it lacks is a textbook in the
+language a learner grew up with. This is a Thai translation and
+adaptation of "Rust-101" by Ralf Jung - from fundamental concepts to
+hands-on practice, built on mdBook so it reads as a web book with no
+installation at all. Thai learners get a reference that speaks their
+language, with credit to the original carried at every step and the
+same license kept.
 
-| แปลแล้ว ▣ | mdBook ▣ | CC BY-SA ▣ | เปิดอ่านฟรี ▣ |
+| Translated ▣ | mdBook ▣ | CC BY-SA ▣ | Free to read ▣ |
 |---|---|---|---|
 
-*หนังสือ - แปล, เรียบเรียง, เผยแพร่ - ถูกสร้างและต่อยอดได้*
+*The book - translate, adapt, publish - is built and open to
+extension.*
 
-> แปลและเรียบเรียงจาก Rust-101 โดย Ralf Jung, เผยแพร่ภายใต้
-> CC BY-SA 4.0 เช่นเดียวกับต้นฉบับ
+> Translated and adapted from Rust-101 by Ralf Jung, released under
+> CC BY-SA 4.0 like the original.
 >
 > **suradet-ps**, artifact keeper
 
@@ -34,7 +36,7 @@ mdBook ที่อ่านเป็นเว็บได้เลย เปิ
 
 ## ◆ IGNITION
 
-หนึ่งคำสั่ง, หนึ่งเซิร์ฟเวอร์.
+One install, one server.
 
 ```
 ⟫ cargo install mdbook
@@ -43,14 +45,15 @@ mdBook ที่อ่านเป็นเว็บได้เลย เปิ
 ⟫ mdbook build
 ```
 
-หนังสือถูกสร้างใน `./book` - เปิด `index.html` ได้โดยตรง หรือรัน
-`⟫ mdbook serve` แล้วเปิด [http://localhost:3000](http://localhost:3000)
+The book is generated in `./book` - open `index.html` directly, or
+run `⟫ mdbook serve` and open
+[http://localhost:3000](http://localhost:3000).
 
 <details>
-<summary>ข้อกำหนดเบื้องต้น</summary>
+<summary>Prerequisites</summary>
 
-- [Rust](https://rustup.rs/) พร้อม `cargo` (สำหรับติดตั้ง `mdbook`)
-- บราวเซอร์สำหรับอ่านหนังสือ
+- [Rust](https://rustup.rs/) with `cargo` (to install `mdbook`)
+- A browser to read the book
 
 </details>
 
@@ -58,67 +61,71 @@ mdBook ที่อ่านเป็นเว็บได้เลย เปิ
 
 ## ◆ ANATOMY
 
-หนังสือหนึ่งเล่ม, ต้นฉบับหนึ่งอัน, คำแปลที่ให้เครดิตครบ
+One book, one original, a translation that keeps its credits.
 
-- **แปล** - เนื้อหาทุกบทแปลและเรียบเรียงจาก "Rust-101" ของ Ralf
-  Jung - ภาษาที่รักษาความถูกต้องของศัพท์เทคนิคไว้พร้อมคำอธิบายที่
-  อ่านเข้าใจได้ในภาษาไทย
-- **เรียบเรียง** - `src/` ถือบททั้งหมด, `GLOSSARY.md` รวมศัพท์,
-  `theme/` ปรับโฉม mdBook - โครงสร้างของตำราถูกจัดให้อ่านต่อเนื่อง
-  ตั้งแต่แนวคิดพื้นฐานไปจนถึงการปฏิบัติ
-- **สร้าง** - mdBook เปลี่ยน markdown เป็นเว็บหนังสือพร้อม
-  search, prev/next, และการพิมพ์ - ประสบการณ์การอ่านแบบ
-  docs ที่คุ้นเคย
-- **ให้เครดิต** - ใบอนุญาต CC BY-SA 4.0 ถูกเก็บไว้ทั้งต้นฉบับและ
-  งานแปล - การดัดแปลงทุกครั้งต้องเผยแพร่ภายใต้ใบอนุญาตเดียวกัน
+- **Translates** - every chapter is translated and adapted from
+  "Rust-101" by Ralf Jung - keeping technical terms precise while the
+  explanations read naturally in Thai.
+- **Adapts** - `src/` holds the chapters, `GLOSSARY.md` gathers the
+  vocabulary, `theme/` shapes the mdBook look - the book is organized
+  to read from fundamental concepts to practice.
+- **Builds** - mdBook turns markdown into a web book with search,
+  prev/next navigation, and print support - the familiar docs
+  reading experience.
+- **Credits** - the CC BY-SA 4.0 license is carried by both the
+  original and the translation - every derivative must be shared
+  under the same license, and the attribution is never dropped.
 
 ---
 
 ## ◆ RITUALS
 
-**พิธีกรรมหลัก** - การอ่านบทแรก:
+**The core ceremony** - reading the first chapter:
 
-1. เปิดหนังสือ - ผ่าน GitHub Pages หรือ `mdbook serve` ในเครื่อง
-2. อ่านบทแรก: แนวคิดพื้นฐานของ Rust ที่อธิบายเป็นภาษาไทย
-3. เปิด glossary เมื่อศัพท์สะดุด - ความหมายครบถ้วนในหน้าเดียว
-4. เมื่อเจอคำผิดหรือสำนวนที่ควรปรับปรุง, ส่ง PR กลับมา - ตำรา
-   ฉบับนี้เติบโตด้วยผู้ช่วยแปลทุกคน
+1. Open the book - on GitHub Pages or through `mdbook serve` on your
+   own machine.
+2. Read the first chapter: Rust's fundamentals, explained in Thai.
+3. Open the glossary when a term trips you - the vocabulary, complete
+   in one page.
+4. When you find a typo or a smoother phrasing, send a PR back - this
+   edition grows with every helper.
 
-**พิธีกรรมของเครดิต** - งานแปลนี้ยืนอยู่บนไหล่ของต้นฉบับ: ชื่อผู้เขียน,
-ลิงก์ต้นทาง, และใบอนุญาตเดียวกันถูกจารึกไว้ใน README ทุกครั้งที่
-อ้างอิง - การต่อยอดต้องเปิดเผยรากเสมอ
+**The ceremony of the credit** - this translation stands on the
+original's shoulders: the author's name, the source link, and the
+same license are written into the README wherever the work is
+referenced - building on it means naming its roots.
 
-**พิธีกรรมของ mdBook** - ตำราที่เป็น code ก็ควรสร้างด้วยเครื่องมือ
-ของนักพัฒนา: build หนึ่งครั้ง, book หนึ่งโฟลเดอร์, และหนังสือที่
-เปิดได้จากเครื่องใดก็ได้
+**The ceremony of mdBook** - a textbook about code should be built
+with a developer's tool: one build, one `book/` folder, and a book
+that opens on any machine.
 
 ---
 
 ## ◆ ECHOES
 
-**เส้นทางของหนังสือเล่มนี้**
+**Where this book is heading**
 
 ```
-translate ▸ แปลและเรียบเรียงบทจากต้นฉบับ ─────────────────────────── ▸ sealed
+translate ▸ chapters translated and adapted from the original ──────── ▸ sealed
 build     ▸ mdBook: build + serve ──────────────────────────────────── ▸ sealed
-publish   ▸ GitHub Pages พร้อม deploy workflow ─────────────────────── ▸ sealed
-extend    ▸ glossary และบทเพิ่มเติม - เปิดรับการมีส่วนร่วม ────────────── ▸ open
+publish   ▸ GitHub Pages with a deploy workflow ─────────────────────── ▸ sealed
+extend    ▸ glossary and new chapters - open to contribution ────────── ▸ open
 ```
 
-**การมีส่วนร่วม** - fork, สร้าง branch, แก้คำผิดหรือปรับปรุงสำนวน,
-แล้วเปิด PR - ทุกการแก้ไขช่วยผู้เรียนไทยทั้งประเทศ เปิด issue ก่อน
-เพื่อคุยกันเรื่องการเปลี่ยนแปลงใหญ่
+**Raising the artifact** - fork, branch, fix the wording or improve
+the phrasing, and open a pull request - every edit helps Thai
+learners everywhere. Open an issue first to discuss larger changes.
 
-**สถานะ** - CI ตรวจทุกการ push และ deploy หนังสือขึ้น GitHub
-Pages อัตโนมัติ [ดู workflow](.github/workflows)
+**Status** - CI checks every push and deploys the book to GitHub
+Pages automatically. [Watch the workflow](.github/workflows).
 
 ---
 
 ```
   ─────────────────────────────────────────
-   ตำราที่อ่านได้ในภาษาแม่
-   คือตำราที่อ่านจนจบ
+   A textbook in the language you grew up in
+   is a textbook you finish.
   ─────────────────────────────────────────
 ```
 
-เผยแพร่ภายใต้ [CC BY-SA 4.0](LICENSE) เช่นเดียวกับต้นฉบับ
+Released under [CC BY-SA 4.0](LICENSE), like the original.
